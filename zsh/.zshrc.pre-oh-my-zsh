@@ -1,0 +1,197 @@
+export PATH="${PATH}:${HOME}/.krew/bin"
+export HOME=/Users/spenceryork
+#eval "$(/opt/homebrew/bin/brew shellenv)"
+export vm_default_user=spenceryork
+# exports
+export ANSIBLE_HOST_KEY_CHECKING=False
+export GOPATH=/Users/spenceryork/go/
+alias pip='pip3'
+alias python='python3.9'
+alias tf=terraform
+export AWS_PROFILE=syork
+export PATH=$PATH:/Users/spenceryork/Library/Python/3.8/bin
+
+#flux auto-complete
+#command -v flux >/dev/null && . <(flux completion zsh) && compdef _flux flux
+
+export SOPS_AGE_KEY_FILE=/Users/spenceryork/.sops/key.txt
+
+
+
+# Terraform Vars
+export TF_VAR_os_password="$OS_PASSWORD"
+
+autoload -Uz vcs_info
+source ~/.built-with-segment.sh
+alias k='kubectl'
+alias os='openstack'
+alias kcc='kubie ctx'
+alias ns='kubie ns'
+export PATH=$PWD/Kui-darwin-x64/Kui.app/Contents/Resources:$PATH
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_MODE='nerdfont-complete'
+prompt_customicon() { $1_prompt_segment "$0" "$2" "none" "248" "\ufb8a" }
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{blue}\u256D\u2500\ue0b3"
+POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='green'
+POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='invalid'
+#POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR=''
+# dir
+POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\ue0c6'
+POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR='\ue0c6'
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=6
+# git
+POWERLEVEL9K_VCS_CLEAN_FOREGROUND='black'
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND='green'
+POWERLEVEL9K_VCS_UNTRACKED_ICON='\uf0fe'
+POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='black'
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='darkorange'
+POWERLEVEL9K_VCS_UNSTAGED_ICON='\uf919'
+POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
+POWERLEVEL9K_VCS_HIDE_TAGS='false'
+POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON='\u2193'
+POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\u2191'
+POWERLEVEL9K_VCS_COMMIT_ICON="\uf417"
+# new lines
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+#POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{blue}\u2570\uf460%f "
+# command_execution_time
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='black'
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='white'
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0
+# time
+POWERLEVEL9K_TIME_BACKGROUND='black'
+POWERLEVEL9K_TIME_FOREGROUND='248'
+POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
+POWERLEVEL9K_TIME_ICON=''
+# battery
+POWERLEVEL9K_BATTERY_STAGES=''
+POWERLEVEL9K_BATTERY_VERBOSE=false
+# wifi
+# prompt
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(customicon custom_user ssh root_indicator dir dir_writable vcs )
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=( command_execution_time  status background_jobs time)
+
+get_user(){
+	echo -n "$(whoami)"
+}
+POWERLEVEL9K_CUSTOM_USER="get_user"
+
+
+export GOROOT=/usr/local/go
+
+
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$GOROOT/bin:/Users/spenceryork/.gem/ruby/2.6.0/gems/cocoapods-1.9.3/lib/:$PATH
+# Path to your oh-my-zsh installation.
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+export UPDATE_ZSH_DAYS=5
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='nano'
+# else
+#   export EDITOR='vim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="$PATH:$HOME/.dotnet/tools"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$GOPATH/bin:$PATH"
+path+=('/Users/spenceryork/bin')
+autoload -Uz compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+
+_dotnet_zsh_complete()
+{
+  local completions=("$(dotnet complete "$words")")
+
+  reply=( "${(ps:\n:)completions}" )
+}
+
+compctl -K _dotnet_zsh_complete dotnet
+
+complete -o nospace -C /Users/spenceryork/bin/vault vault
+complete -o nospace -C /Users/spenceryork/bin/terraform terraform
+complete -o nospace -C /Usres/spenceryork/bin/consul consul
+export GEM_HOME=$HOME/.gem/ruby/2.6.0
+export PATH=$GEM_HOME/bin:$PATH
+export KUBECONFIG=/Users/spenceryork/.kube/config
+
+
+
+source <(kubectl completion zsh)
+
+
+
+# Created by `pipx` on 2022-04-24 20:53:14
+export PATH="$PATH:/Users/spenceryork/.local/bin"
+alias vscode="/Applications/Visual\ Studio\ Code.app/contents/Resources/app/bin/code"
+alias code="/Applications/Visual\ Studio\ Code.app/contents/Resources/app/bin/code"
